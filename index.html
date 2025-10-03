@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Text Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Text Counter</h1>
+    <p class="subtitle">Enter your text and get a count of letters, words, sentences, and other metrics</p>
+
+    <textarea id="textInput" placeholder="Type text" aria-label="Text input"></textarea>
+
+    <div class="controls">
+      <button id="countBtn">Count now</button>
+      <button id="bgBtn">Change background</button>
+      <label class="live">
+        <input type="checkbox" id="liveToggle" checked>
+        Live update
+      </label>
+    </div>
+
+    <section id="results" aria-live="polite" class="results">
+      <h2>Results</h2>
+      <ul>
+        <li>Letters: <strong id="letters">0</strong></li>
+        <li>Characters (with spaces): <strong id="chars">0</strong></li>
+        <li>Words: <strong id="words">0</strong></li>
+        <li>Sentences: <strong id="sentences">0</strong></li>
+        <li>Paragraphs: <strong id="paragraphs">0</strong></li>
+        <li>Longest word: <strong id="longest">—</strong></li>
+        <li>Average word length: <strong id="avgWordLen">0</strong></li>
+      </ul>
+    </section>
+
+   
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
